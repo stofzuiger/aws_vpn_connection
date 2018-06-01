@@ -17,5 +17,5 @@ resource "aws_vpn_connection_route" "office" {
 }
 
 data "aws_ssm_parameter" "VPN-PSK" {
-  name = "${var.environment_tag}-VPN${var.vpn_name}PSK"
+  name = "${var.environment_tag}-VPN${var.vpn_name}PSK_TEST"
 }
